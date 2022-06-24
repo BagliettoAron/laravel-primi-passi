@@ -13,7 +13,7 @@
     <a href="{{route('landingPage')}}">Home</a>
     <a href="{{route('download')}}">Support</a>
     <a href="{{route('mission')}}">Enterprise Mission</a>
-    <a href="{{route('download')}}">Support</a> 
+    
 
 
 

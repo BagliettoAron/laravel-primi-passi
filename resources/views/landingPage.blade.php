@@ -24,7 +24,7 @@
                 <li>
                     <a href="{{route('mission')}}">Enterprise Dream</a>
                 </li>
-                <li><a href="{{route('download')}}">Support</a> </li>
+             
             </ul>
         </nav>
     </header>
