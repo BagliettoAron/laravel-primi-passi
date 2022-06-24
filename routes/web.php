@@ -14,5 +14,30 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    $data = [
+        'contacts',
+        'download',
+        'mission',
+    ];
+    return view('landingPage', $data);
+})->name('landingPage');
+
+Route::get('work-for-us', function(){
+    $data = [
+        'employees' => [
+        'CEO' => 'Elon Musk',
+        'President & OP Director' => 'Gwynne Shotwell',
+        'Attendant' => 'Jeff Bezos',
+        ]
+    ];
+    return view('contacts', $data);
+})->name('contacts');
+
+Route::get('support', function(){
+    return view('download');
+}) -> name('download');
+
+Route::get('enterpriseMotivation', function(){
+    return view('mission');
+})-> name('mission');
+
